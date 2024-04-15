@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=/home/marcos/Desktop/directory/Projeto1/impact.xsl
+OUTFILE=/home/marcos/Desktop/directory/Projeto1/impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=/home/marcos/Desktop/directory/Projeto1
+LICENSE=iMPACT
+USER_INFO=iMPACT
