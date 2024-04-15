@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=/home/marcos/Desktop/directory/Projeto1/AULA_1.ncd
-OUTFILE=/home/marcos/Desktop/directory/Projeto1/AULA_1.bit
-FAMILY=Spartan6
-PART=xc6slx16-2csg324
-WORKINGDIR=/home/marcos/Desktop/directory/Projeto1
-LICENSE=WebPack
-USER_INFO=__0_0_0
