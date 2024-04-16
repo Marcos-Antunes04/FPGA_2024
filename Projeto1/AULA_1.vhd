@@ -7,7 +7,7 @@ entity AULA_1 is
            BUT : in  STD_LOGIC_VECTOR (3 downto 0); --input never read
            LEDS: out  STD_LOGIC_VECTOR (3 downto 0);
            CLK27MHZ : in  STD_LOGIC; --input never read
-           GPIO : inout  STD_LOGIC_VECTOR (7 downto 0)); --input never read
+           GPIO : inout  STD_LOGIC_VECTOR (7 downto 0)); --input never re
 end AULA_1;
 
 architecture Comportamento of AULA_1 is
