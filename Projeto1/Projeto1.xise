@@ -17,20 +17,17 @@
   <files>
     <file xil_pn:name="AULA_1.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="1"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="1"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="mux.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="1"/>
     </file>
     <file xil_pn:name="ULA-1.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="flip-flop-D.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
-    </file>
-    <file xil_pn:name="restricoes.ucf" xil_pn:type="FILE_UCF">
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="constraints_mux.ucf" xil_pn:type="FILE_UCF"/>
@@ -44,6 +41,9 @@
       <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="87"/>
       <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="87"/>
     </file>
+    <file xil_pn:name="restricoes.ucf" xil_pn:type="FILE_UCF">
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
   </files>
 
   <properties>
@@ -51,14 +51,14 @@
     <property xil_pn:name="Device" xil_pn:value="xc6slx16" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Device Family" xil_pn:value="Spartan6" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Evaluation Development Board" xil_pn:value="Spartan-6 SP601 Evaluation Platform" xil_pn:valueState="non-default"/>
-    <property xil_pn:name="Implementation Top" xil_pn:value="Architecture|AULA_1|Comportamento" xil_pn:valueState="non-default"/>
-    <property xil_pn:name="Implementation Top File" xil_pn:value="AULA_1.vhd" xil_pn:valueState="non-default"/>
-    <property xil_pn:name="Implementation Top Instance Path" xil_pn:value="/Aula_sim/XLXI_1" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="Implementation Top" xil_pn:value="Architecture|mux|Behavioral" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="Implementation Top File" xil_pn:value="mux.vhd" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="Implementation Top Instance Path" xil_pn:value="/mux" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Package" xil_pn:value="csg324" xil_pn:valueState="default"/>
     <property xil_pn:name="Preferred Language" xil_pn:value="VHDL" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Property Specification in Project File" xil_pn:value="Store non-default values only" xil_pn:valueState="non-default"/>
-    <property xil_pn:name="Selected Module Instance Name" xil_pn:value="/Aula_sim_Aula_sim_sch_tb" xil_pn:valueState="non-default"/>
-    <property xil_pn:name="Selected Simulation Root Source Node Behavioral" xil_pn:value="work.Aula_sim_Aula_sim_sch_tb" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="Selected Module Instance Name" xil_pn:value="/ULA_1" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="Selected Simulation Root Source Node Behavioral" xil_pn:value="work.ULA_1" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Simulator" xil_pn:value="ISim (VHDL/Verilog)" xil_pn:valueState="default"/>
     <property xil_pn:name="Speed Grade" xil_pn:value="-2" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Synthesis Tool" xil_pn:value="XST (VHDL/Verilog)" xil_pn:valueState="default"/>
@@ -78,8 +78,8 @@
   </properties>
 
   <bindings>
-    <binding xil_pn:location="/AULA_1" xil_pn:name="restricoes.ucf"/>
     <binding xil_pn:location="/AULA_1" xil_pn:name="constraints_mux.ucf"/>
+    <binding xil_pn:location="/mux" xil_pn:name="restricoes.ucf"/>
   </bindings>
 
   <libraries/>
