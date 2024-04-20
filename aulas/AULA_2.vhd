@@ -16,7 +16,7 @@ architecture Comportamento of AULA_2 is
 	end component;
 	signal carry: std_logic_vector( 3 downto 0);
 	begin
-	U0: SomadorCompleto port map (ai => BUT(0),bi => DIPSW(0),ci => '0'     ,si => LEDS(0) ,co => carry(0));d
+	U0: SomadorCompleto port map (ai => BUT(0),bi => DIPSW(0),ci => '0'     ,si => LEDS(0) ,co => carry(0));
 	U1: SomadorCompleto port map (ai => BUT(1),bi => DIPSW(1),ci => carry(0),si => LEDS(1) ,co => carry(1));
 	U2: SomadorCompleto port map (ai => BUT(2),bi => DIPSW(2),ci => carry(1),si => LEDS(2) ,co => carry(2));
 	U3: SomadorCompleto port map (ai => BUT(3),bi => DIPSW(3),ci => carry(2),si => LEDS(3) ,co => carry(3));
