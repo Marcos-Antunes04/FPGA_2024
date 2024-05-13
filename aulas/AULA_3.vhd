@@ -32,25 +32,3 @@ begin
 	U3:FFD_C port map( D => but(3), CLK => CLK1Hz, clr => BUT(0), Q => Q(0));
 	LEDS <= Q;
 end Comportamento;
-
-library ieee;
-use ieee.std_logic_1164.all;
-use ieee.std_logic_arith.all;
-use ieee.std_logic_unsigned.all;
-
-entity FFD_C is
-	port( D, CLK, CLR: in std_logic;
-			Q : out std_logic);
-end FFD_C;
-
-architecture behavior of FFD_C is
-begin
-	process(CLK,CLR)
-	begin
-		if(CLR = '1') then
-			Q <= '0';
-		elsif(CLK'event and CLK='1') then
-			Q <= D;
-		end if;
-	end process;
-end behavior;
