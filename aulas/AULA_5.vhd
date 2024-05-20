@@ -23,6 +23,7 @@ component display port( NUM7, NUM6, NUM5, NUM4, NUM3, NUM2, NUM1, NUM0: in std_l
 signal num7,num6,num5,num4,num3,num2,num1,num0: std_logic_vector(3 downto 0);
 signal clkdisp,cs,din: std_logic;
 signal cont100k,contaux: std_logic_vector(23 downto 0);
+
 begin
   U0: contBCD port map (CLK => CLK8Hz, CLR => BUT(0), ENIN => not BUT(1),
                         UP => BUT(2), ENOUT => cascata1,Q => Q(3 downto 0)); 
@@ -31,7 +32,7 @@ begin
   LEDS <= Q(7 downto 4);
   num0 <= Q(3 downto 0);
   num1 <= Q(7 downto 4);
-  process(CLK27MHz) -- a ref. de tempo � um rel�gio de 27 MHz
+  process(CLK27MHz) -- a ref. de tempo  um relgio de 27 MHz
   begin
     if(CLK27MHz'event and CLK27MHz = '1') then
       if(cont = "1100110111111110010111111") then cont <= "0000000000000000000000000";
@@ -41,10 +42,6 @@ begin
    end process;
 	CLK1Hz <= cont(24);
 	CLK8Hz <= cont(21);
-	
-	
-	
-	
 	
 	process(CLK27MHz)
    begin
