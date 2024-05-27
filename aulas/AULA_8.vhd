@@ -56,6 +56,11 @@ begin
     if (CLK100k'event and CLK100k='1') then
 		Qmicroff <= QMicro;
 		Qpalma <= Qpalma xor duplapalma;
+		if(duplapalma = '1') then
+			num4 <= Qmicroff(19 downto 16);
+			num3 <= Qmicroff(15 downto 12);
+			num2 <= Qmicroff(11 downto 8);			
+		end if;
 	 end if;
   end process;
   LEDs <= Qpalma&Qpalma&Qpalma&Qpalma;
